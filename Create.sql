@@ -23,7 +23,7 @@ create table if not exists Collections (
 create table if not exists Tracks (
 	id serial primary key,
 	name varchar(60),
-	duration numeric (5,2) not NULL,
+	duration integer not NULL,
 	album_id integer not NULL  references Albums(id)
 );
 
